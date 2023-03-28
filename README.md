@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with Frontend N6
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project location github [Inpartner](https://github.com/shakhbozbekusmonov/inpartner).
 
 ## Available Scripts
 

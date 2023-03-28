@@ -1,0 +1,23 @@
+/***************** REGISTER STYLES START ********************/
+.register {
+    padding-top: 96px;
+
+    &__text--title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        color: #000;
+    }
+
+    &__text--desc {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000;
+        opacity: 0.8;
+    }
+}
+/***************** REGISTER STYLES END ********************/
