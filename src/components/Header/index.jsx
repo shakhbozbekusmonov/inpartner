@@ -38,16 +38,14 @@ const Header = () => {
                                     <li className='site-header__nav--item'>
                                         <NavLink
                                             className='site-header__nav--link'
-                                            to='/elonlar'
-                                        >
+                                            to='/elonlar'>
                                             E'lonlar
                                         </NavLink>
                                     </li>
                                     <li className='site-header__nav--item'>
                                         <NavLink
                                             className='site-header__nav--link'
-                                            to='/chat'
-                                        >
+                                            to='/chat'>
                                             Chat
                                         </NavLink>
                                     </li>
@@ -56,19 +54,20 @@ const Header = () => {
 
                             <Link
                                 className='site-header__hiring--link'
-                                to='/elon-berish'
-                            >
+                                to='/elon-berish'>
                                 E'lon berish
                             </Link>
 
                             <div className='site-header__auth d-flex align-items-center'>
-                                <img
-                                    className='site-header__auth-avatar--img'
-                                    src='./assets/images/user.svg'
-                                    width={40}
-                                    height={40}
-                                    alt='User img'
-                                />
+                                <div className='site-header__auth-avatar--box'>
+                                    <img
+                                        className='site-header__auth-avatar--img'
+                                        src='./assets/icons/user.svg'
+                                        width={40}
+                                        height={40}
+                                        alt='User img'
+                                    />
+                                </div>
                                 <img
                                     className='site-header__auth-arrow--img'
                                     src='./assets/icons/arrow-bottom.svg'
@@ -81,19 +80,17 @@ const Header = () => {
                                     <li className='site-header__auth--menu-item'>
                                         <Link
                                             className='site-header__auth--menu-link'
-                                            to='/login'
-                                        >
-                                            Kirish 
-                                            <CiLogin className="ms-2"/>
+                                            to='/login'>
+                                            Kirish
+                                            <CiLogin className='ms-2' />
                                         </Link>
                                     </li>
                                     <li className='site-header__auth--menu-item'>
                                         <Link
                                             className='site-header__auth--menu-link'
-                                            to='/register'
-                                        >
+                                            to='/register'>
                                             Ro'yxatdan o'tish
-                                            <FiEdit className="ms-2"/>
+                                            <FiEdit className='ms-2' />
                                         </Link>
                                     </li>
                                 </ul>

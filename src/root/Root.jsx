@@ -1,5 +1,6 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import Header from "../components/Header";
 import Home from "../pages/Home";
 import Register from "../pages/Register";
@@ -9,12 +10,14 @@ const Root = () => {
         <>
             <Header />
             <Routes>
-                <Route path='/' index element={<Home/>} />
+                <Route path='/home' index element={<Home />} />
+                <Route path='/' element={<Navigate to='/home' />} />
                 <Route path='/category' element={<h1>Category</h1>} />
                 <Route path='/about' element={<h1>About</h1>} />
-                <Route path='/register' element={<Register/>} />
+                <Route path='/register' element={<Register />} />
                 <Route path='*' element={<h1>404</h1>} />
             </Routes>
+            <ToastContainer />
         </>
     );
 };
